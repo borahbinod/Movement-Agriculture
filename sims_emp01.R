@@ -1,8 +1,12 @@
 euc.dist <- function(x1, x2) sqrt(sum((x1 - x2) ^ 2))
 boots<- function(x){
-  s1<- sample(x,size = 1000,replace = T)
-  m1<- mean(s1)
-  k1<- sd(s1)
+  for (i in 1:1000){
+  s1<- sample(x,size = 3,replace = T)
+  ms<- mean(s1)
+  s[i]<- ms
+  }
+  m1<- mean(s)
+  k1<- sd(s)
   r1<- c(m1,k1)
   return(r1)
 }
