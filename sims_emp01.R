@@ -43,7 +43,7 @@ est<- est.data %>% filter(Habitat %in% c("Specialist"))
 ### GRT in minutes, sd: 10 min
 grt_data<- read.csv("Output/grt.csv",header=T)
 
-## adjust the scale; h to reflect real movement; h= 20 in matrix, 10 in forest and 5 in forest during ARS
+## adjust the scale; h to reflect real movement; 
 ## adjust the conc. parameter, r to reflect real movement
 tree<- start_pops
 sim_list<- list()
